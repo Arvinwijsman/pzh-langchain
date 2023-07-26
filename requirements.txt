@@ -1,0 +1,9 @@
+langchain
+PyPDF2
+python-dotenv
+streamlit
+openai
+altair
+tiktoken
+regex
+redis
