@@ -1,0 +1,26 @@
+
+Regeling
+
+
+
+
+
+
+Standaard Officiële Publicaties
+ 
+
+
+
+
+        Zoek naar
+          
+        met
+        
+
+
+
+
+
+
+
+IntroductieStandaard Officiële PublicatiesWijzigingsoverzichtIndeling van de documentatieUitgangspuntenBesluiten en regelingenProces voor de totstandkoming van nieuwe regelgevingStarten van een projectOpstellen regelgevingRegelingTekststructuur en -inhoudStructurering van tekstIdentificatie van tekstelementenTekstweergaveArtikelsgewijze regelingRegeling met vrije tekstMetadata van een regelingNaamgeving van een regelingVerwijzingen naar regelgevingGeldigheidsbepalingenNiet-juridische tekstonderdelenTekstmodel STOP 2.xInformatieobjectAnnotatiesSamenwerken aan regelgevingOpstellen van een besluitInspraak en vaststellingConsolidatieRectificatie en revisieBeroepOfficiële publicatiesGeconsolideerde regelgevingInformatiemodelBedrijfsregelsImplementatiemodel Officiële PublicatiesBegrippenlijstRegelingInhoud van de regelingHet element regeling in STOP is het instrument dat de tekst van de (geconsolideerde) regelgeving bevat zoals beschreven bij het automatiseerbaar creatieproces, eventueel aangevuld met annotaties. STOP stelt als eis dat alleen die tekst uit een besluit die voorschriften en (beleids-)regels beschrijft in een regeling wordt ondergebracht. Dit is het resultaat van een informatiekundige analyse van de inhoud van het besluit, dat per soort besluit in een toepassingsprofiel wordt beschreven.Tekst in STOPAlle tekstmodellen voor regelingen zijn volgens dezelfde principes opgezet. Veel van deze principes zijn ook van toepassing op de tekstmodellen voor besluiten en officiële publicaties.Tekststructuur en tekstelementenHet principe achter de tekstmodellen van STOP. Een lezer ziet de regeling als een doorlopende tekst. In STOP wordt de tekst gecodeerd met elementen die de aard van de tekst aanduiden. Dit biedt software de mogelijkheid op verschillende manieren door de tekst te navigeren of de tekst in fragmenten te presenteren.Categorieën tekst-elementenDe structuur van de tekst wordt gevormd door verschillende categorieën tekstelementen.Identificatie van tekstelementenElk tekstelement heeft een eigen identificatie. Die bestaat uit twee identifiers: eId bedoeld voor verwijzen van tekst naar een bepaalde plaats in de tekst en wId om te verwijzen naar de inhoud van de tekst.TekstweergaveDe standaard schrijft niet in detail voor hoe tekst weergegeven moet worden. De tekst moet weer te geven zijn als onderdeel van een officiële publicatie, die op A4-formaat worden vormgegeven. Daaruit volgen wel eisen aan de indeling van de tekst en de grootte en kwaliteit van illustraties.Modellen voor een regeling De beschikbare modellen voor een regeling zijn:Artikelsgewijze regelingDe tekst van regelingen met voorschriften van algemene strekking kent een opbouw waarbij de voorschriften in principe in het lichaam van de regeling als artikelen worden opgeschreven.Regeling met vrije tekstVoor de overige regelingen is een model beschikbaar waarbij voor het lichaam alleen de structuur wordt vastgelegd. Dit soort teksten is gebruikelijk bij regelingen met beleidsregels of regelingen met zelfbindende voorschriften.Voor alle regeling modellen is van toepassing:Metadata van een regelingBij elke regeling hoort metadata die de globale kenmerken van de regeling bevat.Naamgeving van een regelingVoor de naamgeving van een regeling wordt de Akoma Ntoso naamgevingsconventie gebruikt.Inhoud van de tekstVerwijzingen naar regelgevingIn de tekst kunnen verwijzingen opgenomen worden, zowel naar plaatsen binnen de tekst als naar teksten van andere regelingen. Ook kan naar informatieobjecten of naar andere plaatsen op het internet verwezen worden. STOP sluit aan bij de manier waarop in het juridische domein met de verwijzingen wordt omgegaan.STOP stelt eisen aan de vorm van de tekst via de tekstmodellen, maar honoreert de beleidsvrijheid van de bevoegd gezagen. STOP stelt geen eisen aan de inhoud van de tekst. Op deze regel is één uitzondering:GeldigheidsbepalingenIn STOP kan er op elk moment in de tijd maar één versie van de regeling geldig zijn. Dat stelt eisen aan de manier waarop in de tekst wordt vastgelegd onder welke voorwaarden een voorschrift of (beleids-)regel geldig is.Niet alles in de tekst behoort tot de juridisch relevante inhoud:Niet-juridische tekstonderdelenHoewel de tekst van de regeling inhoudelijk juridisch van aard is, geldt dat niet voor alle aspecten van de tekst. Sommige onderdelen van de tekstmodellen zijn niet-juridische service-informatie die ook zonder een besluit aangepast kunnen worden.Tekst in STOP 1.x en 2.xHet tekstmodel voor STOP 1.x is grotendeels ontleend aan modellen die op dat moment voor een breed scala aan officiële publicaties in gebruik waren. Voor STOP 2.0 is onderzocht in hoeverre de onderdelen van het tekstmodel uit STOP 1.x daadwerkelijk gebruikt worden, of het model teveel vrijheden kent. De resultaten daarvan zijn in STOP 2.0 verwerkt. Het heeft geleid tot het verwijderen van elementen of althans tot een aanscherping van de regels voor het gebruik van de elementen. Zie verder de details van de aanpassing.

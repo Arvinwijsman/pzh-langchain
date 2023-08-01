@@ -1,0 +1,18 @@
+[server]
+port = 8501
+cookieSecret = "a-random-key-appears-here"
+enableCORS = true
+enableStaticServing = false
+
+[browser]
+# Default: "localhost"
+serverAddress = "localhost"
+
+# Whether to send usage statistics to Streamlit.
+gatherUsageStats = false
+serverPort = 8501
+
+[logger]
+# Level of logging: 'error', 'warning', 'info', or 'debug'.
+level = "info"
+

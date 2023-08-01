@@ -1,18 +1,13 @@
 import os
-from typing import List, Optional
-import streamlit as st
-from PyPDF2 import PdfReader
+from typing import List
+from langchain.document_loaders.pdf import PyPDFLoader
+from langchain.text_splitter import (
+    RecursiveCharacterTextSplitter,
+)
 
+from .settings import settings
 
-# UTILS
-def extract_pdf_text(file_path: str):
-    text = ""
-    with open(file_path, "rb") as file:
-        pdf = PdfReader(file)
-        for page in range(len(pdf.pages)):
-            text += pdf.pages[page].extract_text()
-
-    return text
+# FILE / TEXT UTILS
 
 
 def scan_documents_folder(folder_path: str) -> List[str]:
@@ -23,20 +18,19 @@ def scan_documents_folder(folder_path: str) -> List[str]:
     return file_paths
 
 
-@st.cache_data
-def extract_document_list(paths: List[str]) -> str:
-    combined_content = ""
-    for path in paths:
-        try:
-            combined_content += extract_pdf_text(path)
-        except Exception as e:
-            st.warning(f"Failed to read file: {path}", icon="⚠️")
-            print(e)
+def preprocess_documents(folder_path: str = settings.documents_path):
+    file_paths = scan_documents_folder(folder_path)
+    if len(file_paths) == 0:
+        raise Exception(f"No PDF's detected in: {folder_path}")
 
-    return combined_content
+    documents = []
+    for path in file_paths:
+        print(f"Reading: {path}")
+        loader = PyPDFLoader(path)
+        documents.extend(loader.load())
 
-
-def chuck_splitter(text):
-    CharacterTextSplitter(
-        separator="\n", chunk_size=1000, chunk_overlap=200, length_function=len
-    ).split_text(text)
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=settings.chunk_size, chunk_overlap=settings.chunk_overlap
+    )
+    chunks = text_splitter.split_documents(documents)
+    return chunks
